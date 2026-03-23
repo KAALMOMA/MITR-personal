@@ -31,7 +31,7 @@ export default function Home() {
       <div style={styles.hero}>
         <div style={styles.heroLeft}>
           <div style={styles.glassButton}>Visit the FBX Shop</div>
-          <img src="fbx_logo.png" alt="Hero Image" style={{ borderRadius: "8px", maxHeight: "500px", maxWidth: "100%" }} />
+          <img src="fbx_logo.png" alt="Hero Image" style={{ maxHeight: "40vh" }} />
           <div style={styles.heroTitle}>The ultimate kick-starter to becoming a roboticist</div>
           <p style={styles.heroText}>This is a simple static site built with Next.js. Explore the features and get started today!</p>
           <div style={styles.roverlinksContainer}>
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
         </div>
         <div style={styles.heroRight}>
-          <img src="fbx_logo.png" alt="Hero Image" style={{ borderRadius: "8px", maxHeight: "500px", maxWidth: "100%" }} />
+          <img src="fbx_logo.png" alt="Hero Image" style={{ borderRadius: "8px", maxHeight: "300px", maxWidth: "100%" }} />
         </div>
         
       </div>
@@ -136,7 +136,7 @@ const styles = {
     overflow: "visible",
   },
   navbar: {
-    height: "auto",
+    height: "200px",
     width: "100%",
     alignSelf: "stretch",
     display: "flex",
@@ -147,20 +147,16 @@ const styles = {
     backgroundColor: "blue",
     padding: "10px 20px",
     overflow: "visible",
+    backgroundColor: "navy",
   },
   title: {
     fontSize: "2rem",
     marginBottom: "20px",
   },
-  buttonContainer: {
-    display: "flex",
-    gap: "10px",
-    overflow: "visible",
-  },
   navlinks: {
     color: "white",
     textDecoration: "none",
-    fontSize: "1.2rem",
+    fontSize: "1rem",
     padding: "10px 20px",
   },
   navlinksContainer: {
@@ -208,7 +204,7 @@ const styles = {
     padding: "10px 20px",
     fontSize: "1rem",
     cursor: "pointer",
-    borderRadius: "8px",
+    borderRadius: "2em",
     border: "none",
     backgroundColor: "white",
     color: "#0070f3",
@@ -217,16 +213,16 @@ const styles = {
     padding: "10px 20px",
     fontSize: "1rem",
     cursor: "pointer",
-    borderRadius: "8px",
+    borderRadius: "2em",
     border: "2px solid transparent",
-    background: "linear-gradient(#0070f3, #0070f3) padding-box, linear-gradient(45deg, #00ff8c, #f06595) border-box",
+    background: "linear-gradient(navy, navy) padding-box, linear-gradient(45deg, #00ff8c, #f06595) border-box",
     color: "white",
   },
   glassButton: {
     padding: "10px 20px",
     fontSize: "1rem",
     cursor: "pointer",
-    borderRadius: "8px",
+    borderRadius: "2em",
     border: "2px solid rgba(255, 255, 255, 0.5)",
     backgroundColor: "rgba(255, 255, 255, 0.1)",
     color: "white",
@@ -240,8 +236,7 @@ const styles = {
     justifyContent: "center",
     marginBottom: "20px",
     flexDirection: "row",
-    overflow: "visible",
-    padding: "80px 20px",
+    padding: "0px 20px",
   },
   heroLeft: {
     flex: 1,
@@ -251,7 +246,7 @@ const styles = {
     justifyContent: "center",
     padding: "20px",
     textAlign: "center",
-    overflow: "visible",
+    height: "90vh",
   },
   heroRight: {
     flex: 1,
@@ -259,14 +254,15 @@ const styles = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
+    padding: "20px",
     textAlign: "center",
-    overflow: "visible",
+    height: "auto",
   },
   heroTitle: {
     fontFamily: "var(--font-montserrat), Arial, sans-serif",
     fontWeight: "700",
-    fontSize: "50px",
-    lineHeight: "110%",
+    fontSize: "3rem",
+    lineHeight: "90%",
     letterSpacing: "-0.03em",
     background: "linear-gradient(90deg, #ffffff, #d3dfe9, #91bee3, #6277e0)",
     WebkitBackgroundClip: "text",
@@ -276,17 +272,16 @@ const styles = {
     overflow: "visible",
     padding: "4px 0",
     whiteSpace: "normal",
-    maxWidth: "60%",
   },
   heroText: {
     fontFamily: "var(--font-montserrat), Arial, sans-serif",
     fontWeight: "500",
     fontSize: "20px",
-    lineHeight: "160%",
+    lineHeight: "120%",
     letterSpacing: "0px",
     color: "white",
     marginTop: "10px",
-    maxWidth: "65%",
+    maxWidth: "75%",
   },
   stackTitle: {
     fontFamily: "var(--font-montserrat), Arial, sans-serif",
