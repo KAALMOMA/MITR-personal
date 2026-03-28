@@ -1,3 +1,5 @@
+import RandomCubesBg from "../../components/RandomCubesBg";
+
 export default function Home() {
   const navlinks = [
     { label: "About", url: "https://example.com" },
@@ -11,9 +13,10 @@ export default function Home() {
 
   return (
     <main style={styles.container}>
+      <RandomCubesBg />
       <div style={styles.navbar}>
         <img src="fbx_logo.png" alt="FBX Logo" style={styles.logo} />
-
+        <script src="/scripts/RandomCubesBg.min.js" data-nscript="afterInteractive"></script>
         <div style={styles.navlinksContainer}>
           {navlinks.map((link, index) => (
             <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" style={styles.navlinks}>
@@ -23,14 +26,14 @@ export default function Home() {
         </div>
 
         <div style={styles.navActions}>
-          <div style={styles.whitebutton}>Contact Us</div>
-          <div style={styles.gradientButton}>Sign In</div>
+          <a href="https://example.com" target="_blank" style={styles.whitebutton}>Contact Us</a>
+          <a href="https://example.com" target="_blank" style={styles.gradientButton}>Sign In</a>
         </div>
       </div>
       
       <div style={styles.hero}>
         <div style={styles.heroLeft}>
-          <div style={styles.glassButton}>Visit the FBX Shop</div>
+          <a href="https://example.com" target="_blank" style={styles.glassButton}>Visit the FBX Shop</a>
           <img src="fbx_logo.png" alt="Hero Image" style={{ maxHeight: "40vh" }} />
           <div style={styles.heroTitle}>The ultimate kick-starter to becoming a roboticist</div>
           <p style={styles.heroText}>This is a simple static site built with Next.js. Explore the features and get started today!</p>
@@ -52,7 +55,7 @@ export default function Home() {
           <div style={styles.stackTitle}>Build Assembly Skills</div>
           <p style={styles.heroText}>Build Assembly Skills and Learn the Anatomy of A Robot</p>
           <div style={styles.buttonContainer}>
-            <div style={styles.gradientButton}>Learn More</div>
+            <a href="https://example.com" target="_blank"style={styles.gradientButton}>Learn More</a>
           </div>
         </div>
         <div style={styles.heroRight}>
@@ -68,7 +71,7 @@ export default function Home() {
           <div style={styles.stackTitle}>Step-by-Step Learning</div>
           <p style={styles.heroText}>All Taught Through Online Step-By-Step Guides and Video Tutorials</p>
           <div style={styles.buttonContainer}>
-            <div style={styles.gradientButton}>Learn More</div>
+            <a href="https://example.com" target="_blank"style={styles.gradientButton}>Learn More</a>
           </div>
         </div>
       </div>
@@ -78,7 +81,7 @@ export default function Home() {
           <div style={styles.stackTitle}>Test Your Skills</div>
           <p style={styles.heroText}>Test Your Robotics Skills in Capstones and Challenges</p>
           <div style={styles.buttonContainer}>
-            <div style={styles.gradientButton}>Learn More</div>
+            <a href="https://example.com" target="_blank"style={styles.gradientButton}>Learn More</a>
           </div>
         </div>
         <div style={styles.heroRight}>
@@ -94,7 +97,7 @@ export default function Home() {
           <div style={styles.stackTitle}>Learn to Code</div>
           <p style={styles.heroText}>Learn to Code in the World of Robotics Autonomous and Driver Control</p>
           <div style={styles.buttonContainer}>
-            <div style={styles.gradientButton}>Learn More</div>
+            <a href="https://example.com" target="_blank"style={styles.gradientButton}>Learn More</a>
           </div>
         </div>
       </div>
