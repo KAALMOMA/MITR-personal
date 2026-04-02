@@ -1,0 +1,418 @@
+.container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  overflow: visible;
+  background-image: url('/background-static2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 0px 0px 0px 0px;
+}
+
+.restofPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+  background-color: #0b081c;
+  gap: 1rem;
+}
+
+.navlinks {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+}
+
+.navlinksContainer {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex: 1;
+  overflow: visible;
+}
+
+.roverlinksContainer {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+  overflow: visible;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 1rem;
+  overflow: visible;
+}
+
+.navActions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  overflow: visible;
+}
+
+.logo {
+  height: 2.4rem;
+  margin-right: 0px;
+}
+
+.stackImage {
+    max-height: 75vh; 
+    max-width: 100%;
+}
+
+.whitebutton {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  background: white;
+  color: navy;
+}
+
+.gradientButton {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  background: linear-gradient(#0b081c) padding-box, linear-gradient(45deg, #629fcc, #c975b9) border-box;
+  filter: drop-shadow(1rem 0rem 1.4rem rgba(187, 60, 164, 0.2)) drop-shadow(-1rem 0rem 1.5rem rgba(11, 113, 187, 0.125));
+  color: white;
+}
+
+.glassButton {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.heroMain {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to bottom, #0e5c7b00, #0e5c7b00, #0e5c7b00, #0e5c7b00, #13173e, #0b081c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0rem 1rem;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b081c;
+  margin-bottom: 1.5rem;
+  flex-direction: row;
+  padding: 0rem 1rem;
+}
+.heroMirrored {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b081c;
+  margin-bottom: 1.5rem;
+  flex-direction: row;
+  padding: 0rem 1rem;
+}
+.space {
+  height: 5rem;
+}
+
+.heroMainLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  height: 90vh;
+}
+
+.heroLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  height: 50vh;
+}
+
+.heroRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  height: auto;
+}
+
+.heroTitle {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 90%;
+  letter-spacing: -0.03em;
+  background: linear-gradient(90deg, #ffffff, #d3dfe9, #91bee3, #6277e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+  overflow: visible;
+  padding: 0.25rem;
+  white-space: normal;
+}
+
+.heroText {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 120%;
+  letter-spacing: 0rem;
+  color: white;
+  margin-top: 0.5rem;
+  max-width: 75%;
+}
+
+.stackTitle {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 110%;
+  letter-spacing: -0.03em;
+  color: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  overflow: visible;
+  padding: 0.2rem 0;
+  white-space: normal;
+}
+
+.spotlightStack {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-top: 1.5rem;
+  overflow: visible;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2.4rem 0rem 2.4rem 0rem;
+  background-image: linear-gradient(to bottom, #17172f, #0a071e, #161737);
+  background-color: #f0f0f03c;
+  border-radius: 0.5rem;
+  filter: drop-shadow(0rem -0.05rem 0.05rem rgb(139, 139, 151)) drop-shadow(0rem 0rem 1rem rgba(255,255,255,0.125));
+}
+
+.spotlightCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff3c;
+  background-image: linear-gradient(to bottom, #17172f, #0a071e);
+  filter: drop-shadow(0rem -0.05rem 0.05rem rgba(139, 139, 151, 0.5)) drop-shadow(0rem 0rem 1rem rgba(255,255,255,0.125));
+  align-items: center;
+  text-align: center;
+}
+
+.spotlightCardTitle {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 110%;
+  letter-spacing: -0.03em;
+  color: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  overflow: visible;
+  padding: 0.2rem;
+  white-space: normal;
+}
+
+.spotlightCardText {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 200%;
+  letter-spacing: 0rem;
+  color: white;
+  width: 100%;
+}
+
+.spotlightCardContainer {
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.floatingStack {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  overflow: visible;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* === TABLET === */
+@media (max-width: 48rem) {
+.heroMain {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to bottom, #0e5c7b00, #0e5c7b00, #0e5c7b00, #0e5c7b00, #13173e, #0b081c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 1rem;
+}
+.hero {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b081c;
+  margin-bottom: 4rem;
+  flex-direction: column-reverse;
+  padding: 0rem 1rem;
+}
+.heroMirrored {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b081c;
+  margin-bottom: 4rem;
+  flex-direction: column;
+  padding: 0rem 1rem;
+}
+.heroLeft {
+  padding: 0rem;
+}
+.heroRight {
+  padding: 0rem;
+}
+.spotlightStack {
+  width: 80%;
+  background-image: none;
+  background-color: #0a071e;
+  filter: drop-shadow(0rem 0rem 1rem rgba(255, 255, 255, 0.125));
+  border: 0.01rem solid rgba(255, 255, 255, 0.25);
+  margin-top: 0rem;
+}
+.spotlightCardContainer {
+  flex-direction: column;
+  width: auto;
+}
+.spotlightCard {
+  width: 100%;
+  filter: drop-shadow(0rem 0rem 1rem rgba(255, 255, 255, 0.125));
+  border: 0.01rem solid rgba(255, 255, 255, 0.25);
+}
+.stackImage {
+    max-height: 40vh; 
+    max-width: 100%;
+}
+}
+
+/* === MOBILE === */
+@media (max-width: 40rem) {
+.heroMain {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to bottom, #0e5c7b00, #0e5c7b00, #0e5c7b00, #0e5c7b00, #13173e, #0b081c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 1rem;
+}
+.hero {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b081c;
+  margin-bottom: 4rem;
+  flex-direction: column-reverse;
+  padding: 0rem 1rem;
+}
+.heroMirrored {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b081c;
+  margin-bottom: 4rem;
+  flex-direction: column;
+  padding: 0rem 1rem;
+}
+.spotlightStack {
+  width: 90%;
+  background-color: #0a071e;
+  filter: drop-shadow(0rem 0rem 1rem rgba(255, 255, 255, 0.125));
+  border: 0.01rem solid rgba(255, 255, 255, 0.25);
+  margin-top: 0rem;
+}
+.spotlightCardContainer {
+  flex-direction: column;
+  width: auto;
+}
+.spotlightCard {
+  width: 100%;
+  filter: drop-shadow(0rem 0rem 1rem rgba(255, 255, 255, 0.125));
+  border: 0.01rem solid rgba(255, 255, 255, 0.25);
+}
+.stackImage {
+    max-height: 40vh; 
+    max-width: 100%;
+}
+}

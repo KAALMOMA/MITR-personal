@@ -30,7 +30,6 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Script src="/components/RandomCubesBg.min.js" strategy="afterInteractive" />
         {children}
       </body>
     </html>
