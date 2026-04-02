@@ -42,7 +42,7 @@ export default function Home() {
           </div>
         </div>
         <div style={styles.heroRight}>
-          <img src="fbx_logo.png" alt="Hero Image" style={{ borderRadius: "8px", maxHeight: "300px", maxWidth: "100%" }} />
+          <img src="rover1.png" alt="Hero Image" style={{ borderRadius: "8px", maxHeight: "600px", maxWidth: "100%" }} />
         </div>
 
       <div style={styles.space}></div>
@@ -58,13 +58,13 @@ export default function Home() {
             </div>
           </div>
           <div style={styles.heroRight}>
-            <img src="fbx_logo.png" alt="Hero Image" style={{ borderRadius: "8px", maxHeight: "500px", maxWidth: "100%" }} />
+            <img src="rover2.png" alt="Hero Image" style={{ borderRadius: "8px", maxHeight: "600px", maxWidth: "100%" }} />
           </div>
         </div>
 
         <div style={styles.hero}>
           <div style={styles.heroLeft}>
-            <img src="fbx_logo.png" alt="Hero Image" style={{ borderRadius: "8px", maxHeight: "500px", maxWidth: "100%" }} />
+            <img src="rover3.png" alt="Hero Image" style={{ borderRadius: "8px", maxHeight: "600px", maxWidth: "100%" }} />
           </div>
           <div style={styles.heroRight}>
             <div style={styles.stackTitle}>Step-by-Step Learning</div>
@@ -84,7 +84,7 @@ export default function Home() {
             </div>
           </div>
           <div style={styles.heroRight}>
-            <img src="fbx_logo.png" alt="Hero Image" style={{ borderRadius: "8px", maxHeight: "500px", maxWidth: "100%" }} />
+            <img src="rover3.png" alt="Hero Image" style={{ borderRadius: "8px", maxHeight: "600px", maxWidth: "100%" }} />
           </div>
         </div>
 
@@ -109,11 +109,11 @@ export default function Home() {
           <div style={styles.spotlightCardContainer}>
             <div style={styles.spotlightCard}>
               <div style={styles.spotlightCardTitle}>Open-Source to the Core</div>
-              <p style={styles.spotlightCardText}>The FBX Rover is an open-source robotics platform built using an ESP-32 microcontroller, allowing users to access and modify its underlying code and hardware to support customization, experimentation, and hands-on learning in robotics and embedded systems.</p>
+              <p style={styles.spotlightCardText}>The FBX Rover is an open-source robotics platform built using an ESP-32 microcontroller, allowing students to access and modify its underlying code and hardware.</p>
             </div>
             <div style={styles.spotlightCard}>
-              <div style={styles.spotlightCardTitle}>Scholarships</div>
-              <p style={styles.spotlightCardText}>We offer scholarships to ensure that financial barriers do not hinder access to our programs.</p>
+              <div style={styles.spotlightCardTitle}>Making STEM Accessible</div>
+              <p style={styles.spotlightCardText}>We partner with non-profits to introduce robotics and 3D printing to students, helping expand access to hands-on STEM learning opportunities.</p>
             </div>
           </div>
         </div>
@@ -136,13 +136,13 @@ export default function Home() {
 
 const styles = {
   container: {
-    height: "100vh",
+    height: "auto",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     fontFamily: "Arial, sans-serif",
     overflow: "visible",
-    backgroundImage: "url('/color4bg_cubes_alt.png')",
+    backgroundImage: "url('/background-static2.png')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -159,7 +159,7 @@ const styles = {
     gap: "20px",
   },
   navbar: {
-    height: "200px",
+    height: "auto",
     width: "100%",
     alignSelf: "stretch",
     display: "flex",
@@ -171,6 +171,9 @@ const styles = {
     padding: "10px 20px",
     overflow: "visible",
     backgroundColor: "#0b081c",
+    position: "sticky",
+    top: "0",
+    zIndex: "1000",
   },
   title: {
     fontSize: "2rem",
@@ -244,6 +247,7 @@ const styles = {
     borderRadius: "2em",
     border: "2px solid transparent",
     background: "linear-gradient(#0b081c) padding-box, linear-gradient(45deg, #629fcc, #c975b9) border-box",
+    filter: "drop-shadow(10px 0px 20px rgba(187, 60, 164, 0.2)) drop-shadow(-10px 0px 20px rgba(11, 113, 187, 0.125))",
     color: "white",
   },
   glassButton: {
@@ -354,15 +358,17 @@ const styles = {
     display: "flex",
     width: "60%",
     flexDirection: "column",
-    gap: "20px",
+    gap: "40px",
     marginTop: "20px",
     overflow: "visible",
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
-    padding: "20px",
+    padding: "40px 0px 40px 0px",
+    backgroundImage: "linear-gradient(to bottom, #17172f, #0a071e, #161737)",
     backgroundColor: "#f0f0f03c",
-    borderRadius: "20px",
+    borderRadius: "10px",
+    filter: "drop-shadow(0px -1px 1px rgb(139, 139, 151)) drop-shadow(0px 0px 15px rgba(255,255,255,0.125))",
   },
   spotlightCard: {
     display: "flex",
@@ -371,6 +377,8 @@ const styles = {
     padding: "20px",
     borderRadius: "12px",
     backgroundColor: "#ffffff3c",
+    backgroundImage: "linear-gradient(to bottom, #17172f, #0a071e)",
+    filter: "drop-shadow(0px -1px 1px rgba(139, 139, 151, 0.5)) drop-shadow(0px 0px 10px rgba(255,255,255,0.125))",
     maxWidth: "45%",
     alignItems: "center",
     textAlign: "center",
